@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Navbar from '@/components/Navbar'; 
+
 
 export default function ClientEditor({ id }) {
   const router = useRouter();
