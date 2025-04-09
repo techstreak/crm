@@ -1,11 +1,12 @@
+// src/utils/db.js
+
 import { Pool } from 'pg';
 
 const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'testdb',
-  password: '123',
-  port: 5432,
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false, // needed for Render or other cloud hosts
+  },
 });
 
 export default pool;
