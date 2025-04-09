@@ -1,11 +1,11 @@
 // src/utils/db.js
-
-import { Pool } from 'pg';
+import pkg from 'pg';
+const { Pool } = pkg;
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: {
-    rejectUnauthorized: false, // needed for Render or other cloud hosts
+    rejectUnauthorized: false,
   },
 });
 
