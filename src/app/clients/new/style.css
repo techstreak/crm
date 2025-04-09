@@ -1,0 +1,92 @@
+/* src/app/clients/new/style.css */
+
+.add-client-container {
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  .add-client-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .success-message {
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  
+  .success-message.success {
+    color: green;
+  }
+  
+  .success-message.error {
+    color: red;
+  }
+  
+  .add-client-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .add-client-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  
+  .add-client-form input,
+  .add-client-form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 14px;
+  }
+  
+  .add-client-form input[disabled] {
+    background-color: #f1f1f1;
+    color: #777;
+  }
+  
+  .mode-details {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .mode-details > div {
+    flex: 1;
+  }
+  
+  .add-client-form button {
+    grid-column: span 2;
+    margin-top: 10px;
+    padding: 14px 24px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-client-form button:hover {
+    background-color: #1e4fcc;
+  }
+  
+  .add-client-form button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  

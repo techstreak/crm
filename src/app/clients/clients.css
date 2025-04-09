@@ -1,0 +1,58 @@
+/* src/app/clients/clients.css */
+
+.clients-container {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .clients-container h1 {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: #222;
+    font-weight: bold;
+  }
+  
+  .clients-search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .clients-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .clients-list li {
+    margin-bottom: 12px;
+  }
+  
+  .client-link {
+    display: block;
+    padding: 14px 18px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s, border-left 0.2s;
+  }
+  
+  .client-link.due {
+    background-color: #ffe5e5;
+    border-left: 6px solid red;
+  }
+  
+  .client-link.clear {
+    background-color: #f5f5f5;
+    border-left: 6px solid #ccc;
+  }
+  
+  .client-link:hover {
+    background-color: #e2e8f0;
+  }
+  
