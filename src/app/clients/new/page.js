@@ -165,9 +165,9 @@ export default function AddClientPage() {
     >
       <option value="">Select Mode</option>
       <option value="Cash">Cash</option>
-      <option value="Bank Transfer">Bank Transfer</option>
+      <option value="BankTransfer">Bank Transfer</option>
       <option value="PhonePe">PhonePe</option>
-      <option value="G Pay">G Pay</option>
+      <option value="GPay">G Pay</option>
       <option value="UPI"> Other UPI</option>
     </select>
   </div>
